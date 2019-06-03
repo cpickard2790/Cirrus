@@ -22,8 +22,6 @@ const app = express();
 // Port number
 const port = process.env.PORT || 3000;
 
-mongoose.connect(config.database);
-
 app.use(cors());
 app.use(bodyParser.json());
 
