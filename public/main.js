@@ -342,6 +342,7 @@ __webpack_require__.r(__webpack_exports__);
 var SchoolService = /** @class */ (function () {
     function SchoolService(http) {
         this.http = http;
+        this.headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]().set('Content-Type', 'application/json');
     }
     SchoolService.prototype.getSchools = function () {
         return this.http.get('/get');
