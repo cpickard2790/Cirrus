@@ -137,7 +137,7 @@ module.exports = "header {\r\n    background-color: rgb(48, 48, 48);\r\n    text
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n  <h1>{{ title }}</h1>\n  <nav>\n    <ul>\n      <li><a routerLink=\"\">Home</a></li>\n      <p> | </p>\n      <li><a routerLink=\"/about\">About</a></li>\n    </ul>\n  </nav>\n</header>\n<section>\n  <router-outlet></router-outlet>\n</section>\n"
+module.exports = "<header>\n  <h1>{{ title }}</h1>\n  <nav>\n    <ul>\n      <li><a routerLink=\"/\">Home</a></li>\n      <p> | </p>\n      <li><a routerLink=\"/about\">About</a></li>\n    </ul>\n  </nav>\n</header>\n<section>\n  <router-outlet></router-outlet>\n</section>\n"
 
 /***/ }),
 
