@@ -1,10 +1,18 @@
 const mongoose = require('mongoose');
 
 const SchoolSchema = mongoose.Schema({
-    name: String,
-    lat: Number,
-    long: Number,
-    marker: Number
+    name: {
+        type: String
+    },
+    lat: {
+        type: Number
+    },
+    long: {
+        type: Number
+    },
+    marker: {
+        type: Number
+    }
 });
 
 const school = module.exports = mongoose.model('school', SchoolSchema);

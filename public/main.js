@@ -278,7 +278,6 @@ var MapComponent = /** @class */ (function () {
         this.yellowMarker = 'http://www.google.com/intl/en_us/mapfiles/ms/micons/yellow-dot.png';
         this.redMarker = 'http://www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png';
         this.orangeMarker = 'http://www.google.com/intl/en_us/mapfiles/ms/micons/orange-dot.png';
-        this.schools = [];
     }
     MapComponent.prototype.ngOnInit = function () {
         this.getSchools();
@@ -289,7 +288,6 @@ var MapComponent = /** @class */ (function () {
         this.schoolService.getSchools()
             .subscribe(function (schoolList) {
             _this.schools = schoolList;
-            console.log(_this.schools);
         });
     };
     MapComponent.prototype.getIcon = function (school) {
