@@ -8,7 +8,7 @@ const school = require('./controllers/school');
 const cors = require('cors');
 
 // Connect to database
-mongoose.connect('mongodb+srv://cpickard2790:carlisle518@schools-rzhnf.mongodb.net/test', { useNewUrlParser: true }, () =>[
+mongoose.connect('mongodb+srv://cpickard2790:carlisle518@schools-rzhnf.mongodb.net/Cirrus', { useNewUrlParser: true }, () =>[
     console.log('Connected to database')
 ]);
 // If error
