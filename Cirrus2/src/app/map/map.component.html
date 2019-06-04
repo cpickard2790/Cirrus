@@ -1,0 +1,21 @@
+<div class="container">
+
+  <ul class="legend">
+    <li><span class="faster"></span>IPv6 Load Time &le; IPv4</li>
+    <li><span class="all-elements"></span>Fully IPv6 Accessible</li>
+    <li><span class="reachable"></span>DNS AAA Record</li>
+    <li><span class="DNS-AAAA"></span>Not IPv6 Accessible</li>
+  </ul>
+
+  <agm-map id="map" [latitude]="startLat" [zoom]="zoom" [longitude]="startLng">
+    <agm-marker *ngFor="let school of schools; let i = index"
+      [latitude]="school.lat" [longitude]="school.long" [iconUrl]="getIcon(school)">
+      <agm-info-window>
+        <h4>{{ school.name }}</h4>
+        <p>lat: {{ school.lat }}</p>
+        <p>long: {{ school.long }}</p>
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
+
+</div>

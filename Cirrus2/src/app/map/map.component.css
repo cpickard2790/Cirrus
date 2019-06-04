@@ -1,0 +1,65 @@
+/* basic positioning */
+.legend {
+    list-style: none;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+.legend li {
+    display: inline-block;
+}
+
+.legend span {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 80%;
+}
+
+li {
+    padding-right: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+li:nth-child(1) {
+  text-decoration-color: green;
+}
+
+li:nth-child(2) {
+  text-decoration-color: yellow;
+}
+
+li:nth-child(3) {
+  text-decoration-color: orange;
+}
+
+li:nth-child(4) {
+  text-decoration-color: red;
+}
+
+/* colors */
+.legend .faster {
+    background-image: url('http://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png');
+}
+
+.legend .all-elements {
+    background-image: url('http://www.google.com/intl/en_us/mapfiles/ms/micons/yellow-dot.png');
+}
+
+.legend .reachable {
+    background-image: url('http://www.google.com/intl/en_us/mapfiles/ms/micons/orange-dot.png');
+}
+
+.legend .DNS-AAAA {
+    background-image: url('http://www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png');
+}
+
+agm-map {
+    height: 700px;
+}
+
+agm-info-window {
+    color: black;
+}

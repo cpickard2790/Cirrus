@@ -1,0 +1,25 @@
+header {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    height: 6em;
+    color: white;
+}
+
+h1 {
+    padding-top: .5em;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li {
+    padding-right: .5em;
+    padding-left: .5em;
+}
+
+a {
+    color: rgb(130, 224, 228);
+}
